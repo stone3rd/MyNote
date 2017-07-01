@@ -1,3 +1,7 @@
+参考学习网站：[http://www.runoob.com/w3cnote/git-guide.html](http://www.runoob.com/w3cnote/git-guide.html)
+
+
+
 **1.安装git for windows**  
 [git for windows](https://git-for-windows.github.io/)  
 
@@ -20,3 +24,11 @@
 
 * 下载github上的文件  
 `git clone xxx.xxx(文件地址，例如我笔记的ssh地址： git@github.com:stone3rd/MyNote.git）`
+
+**4.工作流**  
+你的本地仓库由git维护的三棵“树”组成。第一个是你的工作目录；第二个是暂存区(Index)，它像个缓存区域，临时保存你的改动；最后是HEAD，它指向你最后一次提交的结果。本地文件更新后可以使用下面指令：  
+
+	git add <filename>
+	git add *	             //由working dir上传到Index
+	git commit -m "注释信息"  //由Index上传到HEAD
+通过上面的指令，可以将改动提交到HEAD，但此时还没有上传到云端仓库。  
